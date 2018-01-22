@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/message_backgrond_drawable"
+        android:text="Goodnight world!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_device_count"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/device_count_background_drawable"/>
+
+        <ImageView
+            android:id="@+id/icon_connection_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/disconnected"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text=" device(s) connected"
+            android:background="@drawable/device_count_message_background_drawable"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="casual"
+        android:hint="Message ..."/>
+
+    <TextView
+        android:id="@+id/tv_action_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Send"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:background="@drawable/button_send_message_background_drawable"/>
+
+</LinearLayout>
